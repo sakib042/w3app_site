@@ -14,7 +14,44 @@ body{
     margin-bottom: 450px;
 }
 
+/* ----------- Menu ------------ */
+
+.navbar ul li {
+    position: relative;
+    background: #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.navbar ul li a::before {
+    background: deepskyblue;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right center 0;
+    transition: transform .6s cubic-bezier(0, .71, .41, 1) 0s;
+    width: 100%;
+}
+
+.navbar ul li:hover a::before {
+    transform: scaleX(1);
+    transform-origin: left center 0;
+}
+
+.navbar ul a:hover {
+    background-color: #FFFFFF;
+    color: deepskyblue !important;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
 /* ----------- Header --------------- */
+
 header{
     background-color: #FFFFFF;
     height: 90vh;
@@ -29,7 +66,7 @@ header{
 
 /* --------- Service ------------*/
 .service{
-    background-color: #202020;
+    background-color: #FFFFFF;
     color: #FFFFFF;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -40,17 +77,16 @@ header{
 .service .service-section{
     padding: 10px;
     background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px #FFFFFF;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
     text-align: center;
-    border: 3px solid transparent;
 }
 
 .service .service-section:hover{
     box-sizing: border-box;
-    box-shadow: 0 0 5px lightblue;
-    border: 3px solid deepskyblue;
+    box-shadow: 1px 1px 10px #000000;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -58,16 +94,16 @@ header{
 
 .service .service-section span{
     position: absolute;
-    top: -55px;
-    left: 39%;
+    top: -45px;
+    left: 40%;
     width: 65px;
     height: 65px;
     padding: 8px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     border-radius: 100%;
     text-align: center;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 5px #FFFFFF;
+    box-shadow: 0 0 5px #000000;
     box-sizing: border-box;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -75,18 +111,28 @@ header{
 }
 
 .service .service-section:hover span{
-    top: -45px;
-    border: 3px solid deepskyblue;
+    top: -50px;
+    border: 2px solid skyblue;
     border-radius: 100%;
     text-align: center;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 5px lightblue;
+    box-shadow: 0px 0px 5px #FFFFFF;
     box-sizing: border-box;
 }
 
 
 .service .service-section span i{
+    color: lightblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section:hover span i{
     color: deepskyblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .service .service-section h3,
