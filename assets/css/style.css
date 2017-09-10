@@ -1,0 +1,725 @@
+/*
+Index of W3-App:
+    Home
+        +Footer
+            -social
+            -text
+
+
+*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 450px;
+}
+
+/* ----------- Header --------------- */
+header{
+    background-color: #FFFFFF;
+    height: 90vh;
+    width: 100%;
+}
+
+.item{
+    background-color: lightblue;
+    height: 80vh;
+    width: 100%;
+}
+
+/* --------- Service ------------*/
+.service{
+    background-color: #202020;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.service .service-section{
+    padding: 10px;
+    background-color: #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center;
+    border: 3px solid transparent;
+}
+
+.service .service-section:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 5px lightblue;
+    border: 3px solid deepskyblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section span{
+    position: absolute;
+    top: -55px;
+    left: 39%;
+    width: 65px;
+    height: 65px;
+    padding: 8px;
+    border: 3px solid #FFFFFF;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px #FFFFFF;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section:hover span{
+    top: -45px;
+    border: 3px solid deepskyblue;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px lightblue;
+    box-sizing: border-box;
+}
+
+
+.service .service-section span i{
+    color: deepskyblue;
+}
+
+.service .service-section h3,
+.service .service-section p{
+    color: #202020;
+    text-align: center;
+}
+
+/* ----------- Pricing -------------- */
+.pricing{
+    background-image: url("../images/pricing.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.pricing .well{
+    color: #000000;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.pricing .well:hover{
+    background-color: lightblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* ----------- About Us ------------- */
+.about-us{
+    background-color: #FFFFFF;
+    background-image: url("../images/shattered.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    color: #202020;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ----------- Our Team ------------- */
+.our-team{
+    background-color: #202020;
+    color: #FFFFFF;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.our-team h4,
+.our-team p{
+    color: #202020;
+}
+
+.our-team .well .hover-description{
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    opacity: 0;
+    width: 90%;
+    height: 95%;
+    text-align: center;
+    background-color: lightblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    transition: 0.8s;
+    z-index: -9;
+}
+
+.our-team .well.profile:hover .hover-description{
+    z-index: 9;
+    opacity: 0.9;
+    left: 5%;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    transition: 0.8s;
+}
+
+.our-team .well:hover .hover-description a,
+.our-team .well:hover .hover-description a:hover,
+.our-team .well:hover .hover-description a:active,
+.our-team .well:hover .hover-description a:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.our-team .well .hover-description i.fa-facebook{
+    box-sizing: border-box;
+    position: absolute;
+    top: 45%;
+    left: 23%;
+    opacity: 1;
+    border: 4px solid lightblue;
+    border-radius: 100%;
+    padding: 8px 10px;
+    background-color: #3B5998;
+    height: 62px;
+    width: 62px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.our-team .well .hover-description i.fa-twitter{
+    box-sizing: border-box;
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    opacity: 1;
+    border: 4px solid lightblue;
+    border-radius: 100%;
+    padding: 8px 10px;
+    background-color: #55ACEE;
+    height: 62px;
+    width: 62px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.our-team .well .hover-description i:hover{
+    border: 4px solid #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* --------- Work Process ----------- */
+
+.process-section  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #202020;
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+}
+.process-section  ul{
+    margin-top:50px;
+    list-style-type: none;
+    padding-left:0;
+    border: 1px solid white;
+}
+.process-section  ul.left{
+    position: absolute;
+    right: 0;
+    float:right;
+    margin-top:50px;
+    list-style-type: none;
+    padding-left:0;
+}
+.process-section  ul.left li{
+    position: relative;
+    right: 0;
+    padding: 8px 0;
+    list-style-type: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    width: 90%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section  ul.left li:hover{
+    color: #55ACEE;
+    border-color: #55ACEE;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section  ul.left li i{
+    position: absolute;
+    right: 0;
+    margin-top: -10px;
+    padding: 10px;
+    border: 2px solid #393939;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.process-section  ul.right li{
+    padding: 8px 0;
+    list-style-type: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    width: 90%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section  ul.right li:hover{
+    color: #55ACEE;
+    border-color: #55ACEE;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section  ul.right li i{
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+    padding: 10px;
+    border: 2px solid #393939;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section  ul li:hover i{
+    background: #55ACEE;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+
+/* ----------- Contact Us ------------- */
+
+.contact-us{
+    background-color: #FFFFFF;
+    background-image: url("../images/squairy_light.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    color: #202020;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* ----------- Footer --------------- */
+footer{
+    background-image: url("../images/dark_dotted.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: -1;
+}
+
+footer p{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p img{
+    height: 45px;
+    width: 45px;
+}
+
+footer hr{
+    width: 50%;
+}
+
+/* ------- Helper --------- */
+
+.padding50{
+    padding: 25px 0;
+    background-color: #202020;
+}
+
+.heading h2 span{
+    text-align: center;
+    box-shadow: 0 2px 15px #00bcd4;
+    height: 1px;
+    background-color: #00bcd4;
+    width: 50%;
+    transform: rotate(90deg);
+}
+
+
+
+
+#info {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    background:#fcf8e3;
+    border:1px solid  #fbeed5;
+    width:95%;
+    max-width:900px;
+    margin:0 auto 40px auto;
+    font-family:arial;
+    font-size:12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+#info .info-wrapper {
+    padding:10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+}
+
+#info a {
+    color:#c09853;
+    text-decoration:none;
+}
+
+#info p {
+    margin:5px 0 0 0;
+}
+
+#filters {
+    margin:1%;
+    padding:0;
+    list-style:none;
+}
+
+#filters li {
+    float:left;
+}
+
+#filters li span {
+    display: block;
+    padding:5px 20px;
+    text-decoration:none;
+    color:#666;
+    cursor: pointer;
+}
+
+#filters li span.active {
+    background: #e95a44;
+    color:#fff;
+}
+
+
+
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width:23%;
+    margin:1%;
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+
+.portfolio-wrapper {
+    overflow:hidden;
+    position: relative !important;
+    background: #666;
+    cursor:pointer;
+}
+
+.portfolio img {
+    max-width:100%;
+    position: relative;
+    top:0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .label {
+    position: absolute;
+    width: 100%;
+    height:40px;
+    bottom:-40px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .label-bg {
+    background: #e95a44;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.portfolio .label-text {
+    color:#fff;
+    position: relative;
+    z-index:500;
+    padding:5px 8px;
+}
+
+.portfolio .text-category {
+    display:block;
+    font-size:9px;
+}
+
+.portfolio:hover .label {
+    bottom:0;
+}
+.portfolio:hover img {
+    top:-30px;
+}
+
+
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px;
+    }
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+
+    #portfoliolist .portfolio {
+        width:48%;
+        margin:1%;
+    }
+
+    #ads {
+        display:none;
+    }
+
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 70%;
+    }
+
+    #ads {
+        display:none;
+    }
+
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+.row:after,
+.clearfix:after {
+    clear: both; }
+.row,
+.clearfix {
+    zoom: 1; }
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.portfolio-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+}
+
+#portfolio-section .container,
+#portfolio-section .col-sm-4  {
+    overflow: hidden;
+    padding: 0;
+}
+
+#portfolio-section .folio-item {
+    position: relative;
+    padding: 10px;
+}
+
+#portfolio-section .overlay {
+    left: 0;
+    right:0;
+    bottom:-100%;
+    height: 0;
+    position: absolute;
+    text-align: center;
+    opacity:0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay .overlay-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay .overlay-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overlay .folio-info {
+    opacity: 0;
+    margin-bottom: 75px;
+    margin-top: -75px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.overlay .folio-info h3 {
+    margin-top: 0;
+}
+
+.folio-overview a {
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.folio-overview .folio-expand {
+    margin-top: -500px;
+    margin-left: -500px;
+}
+
+.folio-image, .folio-overview .folio-expand {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+#portfolio-section .folio-item:hover .folio-image {
+    -webkit-transform: scale(1.5) rotate(-15deg);
+    -moz-transform: scale(1.5) rotate(-15deg);
+    transform: scale(1.5) rotate(-15deg);
+}
+
+.folio-image img {
+    width: 100%;
+    padding: 5px;
+}
+
+#portfolio-section .folio-item:hover .overlay {
+    opacity: 0.8;
+    bottom: 0;
+    height: 100%;
+}
+
+#portfolio-section .folio-item:hover .folio-overview .folio-expand {
+    margin-top: 0;
+    margin-left:0;
+}
+.folio-overview .folio-expand:hover .fa-search-plus,
+.folio-overview .folio-link:hover .fa-link {
+    color: #000;
+}
+#portfolio-section .folio-item:hover .overlay .folio-info {
+    opacity: 1;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+#single-portfolio {
+    padding: 90px 0;
+    position: relative;
+}
+
+#single-portfolio img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#single-portfolio .close-folio-item {
+    position: absolute;
+    top: 30px;
+    font-size: 34px;
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    margin-left: -17px;
+}
