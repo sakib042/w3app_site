@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function() {
     // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    $("a.scroll").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -14,7 +14,7 @@ $(document).ready(function(){
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function(){
+            }, 1000, function() {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
@@ -22,32 +22,18 @@ $(document).ready(function(){
         } // End if
     });
 
-    // Portfolio Single View
-    $('#portfolio').on('click','.folio-read-more',function(event){
-        event.preventDefault();
-        var link = $(this).data('single_url');
-        var full_url = '#portfolio-single-wrap',
-            parts = full_url.split("#"),
-            trgt = parts[1],
-            target_top = $("#"+trgt).offset().top;
-
-        $('html, body').animate({scrollTop:target_top}, 600);
-        $('#portfolio-single').slideUp(500, function(){
-            $(this).load(link,function(){
-                $(this).slideDown(500);
-            });
-        });
-    });
-
-    // Close Portfolio Single View
-    $('#portfolio-single-wrap').on('click', '.close-folio-item',function(event) {
-        event.preventDefault();
-        var full_url = '#portfolio',
-            parts = full_url.split("#"),
-            trgt = parts[1],
-            target_offset = $("#"+trgt).offset(),
-            target_top = target_offset.top;
-        $('html, body').animate({scrollTop:target_top}, 600);
-        $("#portfolio-single").slideUp(500);
+    // Fix menu on scroll
+    lastScroll = 0;
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        if (scroll === 0) {
+            $(".scroll-fixed-nav").removeClass("fixed-nav-on-scroll");
+        } else if (lastScroll - scroll > 0) {
+            $(".scroll-fixed-nav").addClass("fixed-nav-on-scroll");
+            $(".scroll-fixed-nav").css({ "z-index": "999", "transition": "z-index 0.5s" });
+        } else {
+            $(".scroll-fixed-nav").removeClass("fixed-nav-on-scroll");
+        }
+        lastScroll = scroll;
     });
 });
